@@ -1,13 +1,4 @@
 # Define the build settings
-[build]
-  # Command to build your project (adjust based on your project)
-  command = "npm run build" # For React, Vue, or similar
-  # Directory where the built files are located
-  publish = "build" # For React, change to "dist" for Vue/Vite, or "public" for static sites
-  # Environment variables for debugging
-  [build.environment]
-    NODE_ENV = "production"
-    NETLIFY_VERBOSE = "true" # Enable verbose logs for debugging (optional)
 
 # Redirects for Single Page Applications (SPA)
 [[redirects]]
