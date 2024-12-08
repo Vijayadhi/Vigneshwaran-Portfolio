@@ -1,6 +1,10 @@
 # Define the build settings
 
-
+[[redirects]]
+  # Catch-all rule for client-side routing
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 # Custom headers for static assets
 [[headers]]
