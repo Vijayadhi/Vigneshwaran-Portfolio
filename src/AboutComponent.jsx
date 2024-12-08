@@ -39,22 +39,22 @@ function AboutComponent() {
         });
 
         // Initialize Isotope
-        const isotope = new window.Isotope('.isotope-container', {
-            itemSelector: '.portfolio-item',
-            layoutMode: 'masonry',
-            filter: '*', // Default filter: show all
-        });
+        // const isotope = new window.Isotope('.isotope-container', {
+        //     itemSelector: '.portfolio-item',
+        //     layoutMode: 'masonry',
+        //     filter: '*', // Default filter: show all
+        // });
 
-        // Handle filter click
-        const filters = document.querySelectorAll('.portfolio-filters li');
-        filters.forEach(filter => {
-            filter.addEventListener('click', (e) => {
-                const filterValue = e.target.getAttribute('data-filter');
-                isotope.arrange({ filter: filterValue });
-                filters.forEach(f => f.classList.remove('filter-active'));
-                e.target.classList.add('filter-active');
-            });
-        });
+        // // Handle filter click
+        // const filters = document.querySelectorAll('.portfolio-filters li');
+        // filters.forEach(filter => {
+        //     filter.addEventListener('click', (e) => {
+        //         const filterValue = e.target.getAttribute('data-filter');
+        //         isotope.arrange({ filter: filterValue });
+        //         filters.forEach(f => f.classList.remove('filter-active'));
+        //         e.target.classList.add('filter-active');
+        //     });
+        // });
     }, []);
     return (
         <>
