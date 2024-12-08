@@ -1,11 +1,6 @@
 # Define the build settings
 
-# Redirects for Single Page Applications (SPA)
-[[redirects]]
-  # Catch-all rule for client-side routing
-  from = "/*"
-  to = "/index.html"
-  status = 200
+
 
 # Custom headers for static assets
 [[headers]]
