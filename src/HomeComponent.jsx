@@ -34,7 +34,7 @@ function HomeComponent() {
                 <i className="header-toggle d-xl-none bi bi-list" id='header_toggle'>ahs</i>
 
                 <div className="profile-img">
-                    <img src="../assets/img/IMG_20240120_090302_654.jpg" alt="" className="img-fluid rounded-circle" />
+                    <img src="src/assets/img/IMG_20240120_090302_654.jpg" alt="" className="img-fluid rounded-circle" />
                 </div>
 
                 <a href="index.html" className="logo d-flex align-items-center justify-content-center">
@@ -80,7 +80,7 @@ function HomeComponent() {
                 {/* <!-- Hero Section --> */}
                 <section id="hero" className="hero section dark-background">
 
-                    <img src="../assets/img/IMG_20240315_125838.jpg" alt="" data-aos="fade-in" className="" />
+                    <img src="src/assets/img/IMG_20240315_125838.jpg" alt="" data-aos="fade-in" className="" />
 
                     <div className="container">
 
