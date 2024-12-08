@@ -1,0 +1,30 @@
+# Define the build settings
+[build]
+  # Command to build your project (adjust based on your project)
+  command = "npm run build" # For React, Vue, or similar
+  # Directory where the built files are located
+  publish = "build" # For React, change to "dist" for Vue/Vite, or "public" for static sites
+  # Environment variables for debugging
+  [build.environment]
+    NODE_ENV = "production"
+    NETLIFY_VERBOSE = "true" # Enable verbose logs for debugging (optional)
+
+# Redirects for Single Page Applications (SPA)
+[[redirects]]
+  # Catch-all rule for client-side routing
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Custom headers for static assets
+[[headers]]
+  for = "/assets/*" # Customize this based on your assets path
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "/static/*" # For static files if used (e.g., Create React App or similar)
+  [headers.values]
+    Cache-Control = "max-age=31536000"
+
+
