@@ -3,13 +3,11 @@ import PortfolioComponent from './PortfolioComponent'
 
 function ResumeComponent() {
     const handleDownload = () => {
-        // Create an invisible link element
         const link = document.createElement('a');
-        link.href = './assets/VigneshResume.pdf'; // Path to your resume
+        link.href = 'src/assets/VigneshResume.pdf'; // Path to your resume
         link.download = 'Vigneshwaran-Resume.pdf'; // Name the downloaded file (optional)
 
-        // Trigger the click event
-        link.click();
+        link.click()
     };
     return (
         <>
