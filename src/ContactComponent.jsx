@@ -116,25 +116,25 @@ function ContactComponent() {
                                 <div className="row gy-4">
 
                                     <div className="col-md-6">
-                                        <label for="name-field" className="pb-2">Your Name</label>
+                                        <label htmlFor="name-field" className="pb-2">Your Name</label>
                                         <input type="text" name="name" id="name-field" className="form-control" required="" value={formData.name}
                                             onChange={handleInputChange} />
                                     </div>
 
                                     <div className="col-md-6">
-                                        <label for="email-field" className="pb-2">Your Email</label>
+                                        <label htmlFor="email-field" className="pb-2">Your Email</label>
                                         <input type="email" className="form-control" name="email" id="email-field" required="" value={formData.email}
                                             onChange={handleInputChange} />
                                     </div>
 
                                     <div className="col-md-12">
-                                        <label for="subject-field" className="pb-2">Subject</label>
+                                        <label htmlFor="subject-field" className="pb-2">Subject</label>
                                         <input type="text" className="form-control" name="subject" id="subject-field" required="" value={formData.subject}
                                             onChange={handleInputChange} />
                                     </div>
 
                                     <div className="col-md-12">
-                                        <label for="message-field" className="pb-2">Message</label>
+                                        <label htmlFor="message-field" className="pb-2">Message</label>
                                         <textarea className="form-control" name="message" rows="10" id="message-field" required="" value={formData.message}
                                             onChange={handleInputChange}></textarea>
                                     </div>

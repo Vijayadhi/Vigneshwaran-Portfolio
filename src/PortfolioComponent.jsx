@@ -70,7 +70,7 @@ function PortfolioComponent() {
         <>
             {/* <!-- Portfolio Section --> */}
             <section id="portfolio" className="portfolio">
-                <div class="container section-title" data-aos="fade-up">
+                <div className="container section-title" data-aos="fade-up">
                     <h2>My Portfolio</h2>
                     <p>Welcome to my portfolio! Here, you’ll find a collection of projects that showcase my skills and expertise in various technologies. Each project reflects my commitment to delivering high-quality, innovative solutions that meet real-world challenges.</p>
                 </div>
