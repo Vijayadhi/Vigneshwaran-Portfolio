@@ -5,7 +5,7 @@ function ResumeComponent() {
     const handleDownload = () => {
         // Create an invisible link element
         const link = document.createElement('a');
-        link.href = 'src/assets/VigneshResume.pdf'; // Path to your resume
+        link.href = './assets/VigneshResume.pdf'; // Path to your resume
         link.download = 'Vigneshwaran-Resume.pdf'; // Name the downloaded file (optional)
 
         // Trigger the click event
