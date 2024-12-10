@@ -4,9 +4,12 @@ import AboutComponent from './AboutComponent'
 import ContactComponent from './ContactComponent'
 import { Typewriter } from 'react-simple-typewriter'
 import PortfolioComponent from './PortfolioComponent';
+import nav_img from "./assets/img/IMG_20240120_090302_654.jpg";
+import bg_img from "./assets/img/IMG_20240315_125838.jpg";
 // import "./App.css"
 
 function HomeComponent() {
+    // const nav_img = "/img/IMG_20240120_090302_654.jpg"
     const [activeSection, setActiveSection] = useState('');
 
     const handleScroll = () => {
@@ -34,7 +37,7 @@ function HomeComponent() {
                 <i className="header-toggle d-xl-none bi bi-list" id='header_toggle'>ahs</i>
 
                 <div className="profile-img">
-                    <img src="src/assets/img/IMG_20240120_090302_654.jpg" alt="" className="img-fluid rounded-circle" />
+                    <img src={nav_img} alt="" className="img-fluid rounded-circle" />
                 </div>
 
                 <a href="index.html" className="logo d-flex align-items-center justify-content-center">
@@ -80,7 +83,7 @@ function HomeComponent() {
                 {/* <!-- Hero Section --> */}
                 <section id="hero" className="hero section dark-background">
 
-                    <img src="src/assets/img/IMG_20240315_125838.jpg" alt="" data-aos="fade-in" className="" />
+                    <img src={bg_img} alt="" data-aos="fade-in" className="" />
 
                     <div className="container">
 

@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import "./App.css"
 import AboutComponent from './AboutComponent';
+import flight_img from './assets/img/portfolio/image.png';
+import aasc_manager from './assets/img/portfolio/aasc.png';
+import ecm_img from './assets/img/portfolio/ecm.png';
+import gdf_img from './assets/img/portfolio/getDataFilledDotcom.png';
+import omg_img from './assets/img/portfolio/omega-computers.png';
+import url_img from './assets/img/portfolio/url-shortner.png'
 
 function PortfolioComponent() {
     const [itemsToShow, setItemsToShow] = useState(6);
@@ -9,42 +15,42 @@ function PortfolioComponent() {
 
     const portfolioItems = [
         {
-            imgSrc: 'src/assets/img/portfolio/image.png',
+            imgSrc: `${flight_img}`,
             title: 'Flight Reservation System',
             shortDescription: 'A user-friendly platform for seamless flight search, filtering, and reservation with integrated Amadeus API.',
             fullDescription: 'A dynamic web application designed to simplify flight searches and reservations. Built using the **<b>MERN stack (MongoDB, Express.js, React.js, Node.js)**, it integrates with the **Amadeus API** for real-time flight data. The application features responsive design implemented with **Tailwind css** It utilizes **session storage** for temporary data management and supports advanced filtering options for user convenience. This system combines modern UI/UX principles with robust backend architecture to deliver a seamless booking experience.',
             link: 'https://flight-reservation-system-wine.vercel.app/?vercelToolbarCode=AN28OJKUfQnmyz5'
         },
         {
-            imgSrc: 'src/assets/img/portfolio/aasc.png',
+            imgSrc: `${aasc_manager}` ,
             title: 'ASC Manager',
             shortDescription: 'A complex Python full-stack application for content management and multiple user roles.',
             fullDescription: 'ASC Manager is a complex Python-based full-stack application designed for content management systems (CMS), enabling users with multiple roles such as admin and users. The app allows content creation, modification, and management with role-based access control.',
             link: 'https://aasc-st-asmt-manager.onrender.com/'
         },
         {
-            imgSrc: 'src/assets/img/portfolio/ecm.png',
+            imgSrc: `${ecm_img}`,
             title: 'Electricity Consumption Manager',
             shortDescription: 'Graphical representation of electricity consumption across multiple buildings using Django REST Framework and React.',
             fullDescription: 'The Electricity Consumption Manager is an advanced system that provides a graphical representation of electricity consumption across multiple buildings. Built with Django REST Framework for the backend and React for the frontend, this system includes charts (pie charts) to visually represent energy usage for each building and meter.',
             link: 'https://ec-manager-app.netlify.app/'
         },
         {
-            imgSrc: 'src/assets/img/portfolio/getDataFilledDotcom.png',
+            imgSrc: `${gdf_img}`,
             title: 'getDataFilledDotcom',
             shortDescription: 'A MERN stack app for matrimony centers to generate high-quality bride bio-data templates.',
             fullDescription: 'getDataFilledDotcom is a MERN stack application developed for matrimony centers. This system enables the easy filling of bride bio-data templates, which can be downloaded in a high-quality PDF format. It serves as a solution for distributing and managing matrimonial data efficiently.',
             link: 'https://getdatafilledotcom.netlify.app/'
         },
         {
-            imgSrc: 'src/assets/img/portfolio/omega-computers.png',
+            imgSrc: `${omg_img}`,
             title: 'Shri Hayagiriva Group of Services',
             shortDescription: 'Dynamic platform built with Python Django, enabling admins to manage and redistribute services',
             fullDescription: 'A comprehensive full-stack application developed using Python Django, providing an efficient platform for managing and redistributing multiple services. With a robust admin panel, admins can customize content such as blogs, galleries, and other service details, offering an enhanced experience for both service providers and users. The platform allows seamless service applications, making it easy to manage and update content on the go. Perfect for organizations looking to provide a user-friendly service hub with administrative flexibility and content customization',
             link: 'https://shgs.onrender.com/'
         },
         {
-            imgSrc: 'src/assets/img/portfolio/url-shortner.png',
+            imgSrc: `${url_img}`,
             title: 'URL Shortner',
             shortDescription: 'Dynamic app with Javascript enabling users to short thier urls.',
             fullDescription: 'A Dynamic app developed using Javascript enabling users to short thier long urls.Implements the CRUD operation to short the given long urls with the help of bitly api. Also has the functionalites to Edit, Copy, and even deleted the shorted urls.',
