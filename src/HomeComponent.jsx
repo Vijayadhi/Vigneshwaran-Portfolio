@@ -49,7 +49,7 @@ function HomeComponent() {
                 <div className="social-links text-center">
                     <a href="mailto:venerablevignesh@gmail.com" target="_blank" className="twitter" ><i className="bi bi-envelope"></i></a>
                     {/* <a href="#" className="facebook"><i className="bi bi-facebook"></i></a> */}
-                    <a href="https://wa.me/qr/GECEIZXGJLGSG1" target="_blank"  className="instagram"><i className="bi bi-whatsapp"></i></a>
+                    <a href="https://wa.me/qr/GECEIZXGJLGSG1" target="_blank" className="instagram"><i className="bi bi-whatsapp"></i></a>
                     <a href="https://github.com/Vijayadhi" target="_blank" className="google-plus"><i className="bi bi-github"></i></a>
                     <a href="https://www.linkedin.com/in/vignesh-waran-32176021a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="linkedin" target='_blank'><i className="bi bi-linkedin"></i></a>
                 </div>
@@ -59,15 +59,16 @@ function HomeComponent() {
                         <li className={activeSection === 'hero' ? 'active' : ''}>
                             <a href="#hero"><i className="bi bi-house navicon"></i>Home</a>
                         </li>
+                        <li className={activeSection === 'portfolio' ? 'active' : ''}>
+                            <a href="#portfolio"><i className="bi bi-images navicon"></i> Portfolio</a>
+                        </li>
                         <li className={activeSection === 'about' ? 'active' : ''}>
                             <a href="#about"><i className="bi bi-person navicon"></i> About</a>
                         </li>
                         <li className={activeSection === 'resume' ? 'active' : ''}>
                             <a href="#resume"><i className="bi bi-file-earmark-text navicon"></i> Resume</a>
                         </li>
-                        <li className={activeSection === 'portfolio' ? 'active' : ''}>
-                            <a href="#portfolio"><i className="bi bi-images navicon"></i> Portfolio</a>
-                        </li>
+
                         <li className={activeSection === 'services' ? 'active' : ''}>
                             <a href="#services"><i className="bi bi-hdd-stack navicon"></i> Services</a>
                         </li>
@@ -117,7 +118,7 @@ function HomeComponent() {
 
                 </section>
                 {/* <!-- /Hero Section --> */}
-                <PortfolioComponent/>
+                <PortfolioComponent />
 
                 <ContactComponent />
             </main>

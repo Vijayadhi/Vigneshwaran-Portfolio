@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ResumeComponent from './ResumeComponent'
+import about_img from "./assets/img/IMG_20240120_090302_654.jpg";
+
 function AboutComponent() {
     const [progress, setProgress] = useState({
         html: 0,
@@ -73,7 +75,7 @@ function AboutComponent() {
 
                     <div className="row gy-4 justify-content-center">
                         <div className="col-lg-4">
-                            <img src="src/assets/img/IMG_20240120_090302_654.jpg" className="img-fluid" alt="" />
+                            <img src={about_img} className="img-fluid" alt="" />
                         </div>
                         <div className="col-lg-8 content">
                             <h2>Python Fullstack & MERN Stack Developer</h2>

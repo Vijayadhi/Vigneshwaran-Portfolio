@@ -1,12 +1,14 @@
 import React from 'react'
-import PortfolioComponent from './PortfolioComponent'
-
+// import resume_pdf from "/VigneshResume.pdf";
 function ResumeComponent() {
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = 'src/assets/VigneshResume.pdf'; // Path to your resume
-        link.download = 'Vigneshwaran-Resume.pdf'; // Name the downloaded file (optional)
+        link.href = '/VigneshResume.pdf' 
+        link.download = 'Vigneshwaran_Resume.pdf'; // Name the downloaded file (optional)
+        // Path to your resume
+        // console.log(resume_pdf);
 
+        
         link.click()
     };
     return (
@@ -136,11 +138,19 @@ function ResumeComponent() {
                     <div className="resume-button">
                         <button
                             className="btn btn-lg text-center"
-                            style={{ background: "#149ddd", fontWeight: 'bold', color: "#15141A", textAlign: "center" }}
+                            style={{
+                                background: "#149ddd",
+                                fontWeight: 'bold',
+                                color: "#15141A",
+                                textAlign: "center",
+                            }}
                             onClick={handleDownload}
                         >
                             Download CV &nbsp;
-                            <i className="bi bi-arrow-down-circle" style={{ color: "white", fontWeight: 'bold' }}></i>
+                            <i
+                                className="bi bi-arrow-down-circle"
+                                style={{ color: "white", fontWeight: 'bold' }}
+                            ></i>
                         </button>
                     </div>
 
