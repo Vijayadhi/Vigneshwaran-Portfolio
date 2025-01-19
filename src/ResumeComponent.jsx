@@ -3,7 +3,7 @@ import React from 'react'
 function ResumeComponent() {
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/VigneshResume.pdf' 
+        link.href = '/Vignesh_Resume.pdf' 
         link.download = 'Vigneshwaran_Resume.pdf'; // Name the downloaded file (optional)
         // Path to your resume
         // console.log(resume_pdf);
@@ -18,7 +18,7 @@ function ResumeComponent() {
 
                 {/* <!-- Section Title --> */}
                 <div className="container section-title" data-aos="fade-up">
-                    <h2>Resume</h2>
+                    <h2 style={{textTransform: 'uppercase'}}>Resume</h2>
                     <p>Discover my professional journey, highlighting my skills, achievements, and experiences. From academic excellence to real-world expertise, this is a snapshot of my dedication, growth, and passion for making an impact. Let’s build the future together!</p>
                 </div>
 

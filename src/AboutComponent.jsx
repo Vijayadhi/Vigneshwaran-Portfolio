@@ -65,7 +65,7 @@ function AboutComponent() {
 
                 {/* <!-- Section Title --> */}
                 <div className="container section-title" data-aos="fade-up">
-                    <h2>About</h2>
+                    <h2 style={{textTransform: 'uppercase'}}>About</h2>
                     <p>Driven and detail-oriented Information Technology student with a strong foundation in both technical and creative disciplines. Currently pursuing a Bachelor's degree in Information Technology at Achariya Arts & Science College, Pondicherry, with hands-on experience in web development, graphic design, and technical service engineering. My passion lies in leveraging technology to create innovative solutions and deliver user-centric designs. I am committed to continuous growth and eager to contribute to forward-thinking projects that drive both personal and organizational success.</p>
                 </div>
 
@@ -169,7 +169,7 @@ function AboutComponent() {
             <section id="skills" className="skills section light-background">
                 {/* Section Title */}
                 <div className="container section-title" data-aos="fade-up">
-                    <h2>Skills</h2>
+                    <h2 style={{textTransform: 'uppercase'}}>Skills</h2>
                     <p>Showcasing expertise in various technologies and tools to deliver innovative solutions effectively.</p>
                 </div>
 
@@ -349,7 +349,7 @@ function AboutComponent() {
 
                 {/* <!-- Section Title --> */}
                 <div className="container section-title" data-aos="fade-up">
-                    <h2>Services</h2>
+                    <h2 style={{textTransform: 'uppercase'}}>Services</h2>
                     <p>Offering a blend of technical expertise and creative solutions, I specialize in delivering high-quality services tailored to meet your unique needs. From full-stack development to stunning visuals, I bring ideas to life with precision and dedication.</p>
                 </div>
                 {/* <!-- End Section Title --> */}
@@ -361,7 +361,7 @@ function AboutComponent() {
                         <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
                             <div className="icon flex-shrink-0"><i className="bi bi-laptop"></i></div>
                             <div>
-                                <h4 className="title"><a href="service-details.html" className="stretched-link">Full-Stack Development</a></h4>
+                                <h4 className="title"><a href="#" className="stretched-link">Full-Stack Development</a></h4>
                                 <p className="description">Proficient in Python Django and MERN stack, I build scalable, robust, and user-friendly web applications tailored to your business needs.</p>
                             </div>
                         </div>
@@ -370,7 +370,7 @@ function AboutComponent() {
                         <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
                             <div className="icon flex-shrink-0"><i className="bi bi-tools"></i></div>
                             <div>
-                                <h4 className="title"><a href="service-details.html" className="stretched-link">Technical Support</a></h4>
+                                <h4 className="title"><a  href="#" className="stretched-link">Technical Support</a></h4>
                                 <p className="description">Expertise in card-level repairs and hardware troubleshooting ensures swift and reliable technical support services for your devices.</p>
                             </div>
                         </div>
@@ -379,7 +379,7 @@ function AboutComponent() {
                         <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
                             <div className="icon flex-shrink-0"><i className="bi bi-brush"></i></div>
                             <div>
-                                <h4 className="title"><a href="service-details.html" className="stretched-link">Graphic Design</a></h4>
+                                <h4 className="title"><a  href="#" className="stretched-link">Graphic Design</a></h4>
                                 <p className="description">From logo creation to marketing materials, I craft visually compelling designs that align with your brand identity using Photoshop and Figma.</p>
                             </div>
                         </div>
@@ -388,7 +388,7 @@ function AboutComponent() {
                         <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
                             <div className="icon flex-shrink-0"><i className="bi bi-palette"></i></div>
                             <div>
-                                <h4 className="title"><a href="service-details.html" className="stretched-link">UI/UX Design</a></h4>
+                                <h4 className="title"><a  href="#" className="stretched-link">UI/UX Design</a></h4>
                                 <p className="description">Delivering intuitive and aesthetically pleasing interfaces that enhance user experience, leveraging tools like Figma for design precision.</p>
                             </div>
                         </div>
@@ -397,7 +397,7 @@ function AboutComponent() {
                         <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
                             <div className="icon flex-shrink-0"><i className="bi bi-code-slash"></i></div>
                             <div>
-                                <h4 className="title"><a href="service-details.html" className="stretched-link">Web Development</a></h4>
+                                <h4 className="title"><a  href="#" className="stretched-link">Web Development</a></h4>
                                 <p className="description">Specialized in creating responsive, dynamic websites with modern frameworks and technologies to ensure seamless performance.</p>
                             </div>
                         </div>
@@ -406,8 +406,16 @@ function AboutComponent() {
                         <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
                             <div className="icon flex-shrink-0"><i className="bi bi-image"></i></div>
                             <div>
-                                <h4 className="title"><a href="service-details.html" className="stretched-link">Photo Editing</a></h4>
+                                <h4 className="title"><a  href="#" className="stretched-link">Photo Editing</a></h4>
                                 <p className="description">Providing high-quality photo editing services to enhance visual appeal, ensuring perfection in every detail.</p>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                            <div className="icon flex-shrink-0"><i className="bi bi-image"></i></div>
+                            <div>
+                                <h4 className="title"><a  href="#" className="stretched-link">Digital Marketing</a></h4>
+                                <p className="description">Comprehensive digital marketing solutions that enhance brand visibility, drive customer engagement, and optimize online performance through strategic, data-driven campaigns.</p>
                             </div>
                         </div>
                         {/* <!-- End Service Item --> */}
