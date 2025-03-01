@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./App.css";
 import AboutComponent from './AboutComponent';
-import flight_img from './assets/img/portfolio/image.png';
+import flight_img from './assets/img/portfolio/afos.png';
 import aasc_manager from './assets/img/portfolio/aasc.png';
 import ecm_img from './assets/img/portfolio/ecm.png';
 import gdf_img from './assets/img/portfolio/getDataFilledDotcom.png';
@@ -15,6 +15,7 @@ import recrou from './assets/img/portfolio/recrou.png';
 import reacttodo from './assets/img/portfolio/react_todo.png';
 import axc from './assets/img/portfolio/axc.png';
 import ecm_api from './assets/img/portfolio/ecm-portfolio.png';
+import olms from './assets/img/portfolio/olms.png';
 
 
 function PortfolioComponent() {
@@ -75,6 +76,16 @@ function PortfolioComponent() {
             password: "admin"
         },
         {
+            imgSrc: `${flight_img}`,
+            title: 'Airline Food Ordering System',
+            category: 'Fullstack',
+            shortDescription: 'A user-friendly platform for seamless flight search, filtering, and reservation with integrated Amadeus API.',
+            fullDescription: 'The Airline Food Management System is a web-based application designed to streamline in-flight food service operations. Developed for final-year aviation college students, the system allows passengers to browse meals, place orders, and track their requests in real-time. The admin panel manages food inventory, order processing, and reports, while the flight crew interface facilitates order fulfillment and updates. Built using React.js for the frontend and Django REST Framework for the backend, the system ensures seamless communication through RESTful APIs with JWT authentication. This project enhances airline efficiency and passenger experience through a structured, responsive, and secure digital platform.',
+            link: 'https://afos-backend.onrender.com/',
+            username: "admin",
+            password: "admin"
+        },
+        {
             imgSrc: `${social_image}`,
             title: 'Social and Musical Chambers Trust',
             category: 'Fullstack',
@@ -82,6 +93,16 @@ function PortfolioComponent() {
             fullDescription: 'The Social and Musical Chambers Trust Management System is a platform designed to streamline the activities and operations of a trust dedicated to promoting music and social causes. The system allows efficient management of events, memberships, donations, and announcements while fostering community engagement through a user-friendly interface.',
             link: 'https://socailandmusicalchamber.netlify.app',
             username: "admin@gmail.com",
+            password: "admin"
+        },
+        {
+            imgSrc: `${olms}`,
+            title: 'Online Library Management System',
+            category: 'Fullstack',
+            shortDescription: 'A user-friendly platform for seamless flight search, filtering, and reservation with integrated Amadeus API.',
+            fullDescription: 'Online Library Management System is a Python Full-Stack project built using Django to streamline library operations. This system allows admins to manage books, users, and borrowing records efficiently. Students/members can search, borrow, and return books online. It features user authentication, book catalog management, due date tracking, and fine calculation. The project ensures a responsive UI and a secure database for seamless library management. 🚀📚',
+            link: 'https://onlinelibrary-qe0u.onrender.com/',
+            username: "Admin",
             password: "admin"
         },
 
