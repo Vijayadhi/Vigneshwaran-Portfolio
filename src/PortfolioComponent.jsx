@@ -23,6 +23,15 @@ function PortfolioComponent() {
     const [showModal, setShowModal] = useState(false);
     const [modalContent, setModalContent] = useState(null);
 
+    const [copiedField, setCopiedField] = useState("");
+
+    const handleCopy = (text, field) => {
+        navigator.clipboard.writeText(text).then(() => {
+            setCopiedField(field);
+            setTimeout(() => setCopiedField(""), 1500); // Reset after 1.5 seconds
+        });
+    };
+
     const portfolioItems = [
 
         {
@@ -32,14 +41,18 @@ function PortfolioComponent() {
             shortDescription: 'Dynamic platform built with Python Django, enabling admins to manage and redistribute services',
             fullDescription: 'A comprehensive full-stack application developed using Python Django, providing an efficient platform for managing and redistributing multiple services. With a robust admin panel, admins can customize content such as blogs, galleries, and other service details, offering an enhanced experience for both service providers and users. The platform allows seamless service applications, making it easy to manage and update content on the go. Perfect for organizations looking to provide a user-friendly service hub with administrative flexibility and content customization',
             link: 'https://shgs.onrender.com/',
+            username: "admin@gmail.com",
+            password: "admin"
         },
         {
             imgSrc: `${aasc_manager}`,
             title: 'AASC Manager',
             category: 'Fullstack',
             shortDescription: 'A complex Python full-stack application for content management and multiple user roles.',
-            fullDescription: 'ASC Manager is a complex Python-based full-stack application designed for content management systems (CMS), enabling users with multiple roles such as admin and users. The app allows content creation, modification, and management with role-based access control.',
+            fullDescription: 'ASC Manager is a complex Python-based full-stack application designed for content management systems (CMS), enabling users with multiple roles such as admin and users. The app allows content creation, modification, and management with role-based access control. ',
             link: 'https://aasc-st-asmt-manager.onrender.com/',
+            username: "admin@gmail.com",
+            password: "admin"
         },
         {
             imgSrc: `${ecm_img}`,
@@ -47,15 +60,19 @@ function PortfolioComponent() {
             category: 'Fullstack',
             shortDescription: 'Graphical representation of electricity consumption across multiple buildings using Django REST Framework and React.',
             fullDescription: 'The Electricity Consumption Manager is an advanced system that provides a graphical representation of electricity consumption across multiple buildings. Built with Django REST Framework for the backend and React for the frontend, this system includes charts (pie charts) to visually represent energy usage for each building and meter.',
-            link: 'https://ec-manager-app.netlify.app/',
+            link: 'https://electricity-manager-49sw0qy8c-vigneshwaran-js-projects.vercel.app/',
+            username: "admin@gmail.com",
+            password: "admin"
         },
         {
             imgSrc: `${gdf_img}`,
             title: 'getDataFilledDotcom',
             category: 'Fullstack',
             shortDescription: 'A MERN stack app for matrimony centers to generate high-quality bride bio-data templates.',
-            fullDescription: 'getDataFilledDotcom is a MERN stack application developed for matrimony centers. This system enables the easy filling of bride bio-data templates, which can be downloaded in a high-quality PDF format. It serves as a solution for distributing and managing matrimonial data efficiently.',
+            fullDescription: 'getDataFilledDotcom is a MERN stack application developed for matrimony centers. This system enables the easy filling of bride bio-data templates, which can be downloaded in a high-quality PDF format. It serves as a solution for distributing and managing matrimonial data efficiently. Currently the app dosen\'t support register functionality else all working good.',
             link: 'https://getdatafilledotcom.netlify.app/',
+            username: "vignesh@gmail.com",
+            password: "admin"
         },
         {
             imgSrc: `${social_image}`,
@@ -64,6 +81,8 @@ function PortfolioComponent() {
             shortDescription: 'A user-friendly platform for seamless flight search, filtering, and reservation with integrated Amadeus API.',
             fullDescription: 'The Social and Musical Chambers Trust Management System is a platform designed to streamline the activities and operations of a trust dedicated to promoting music and social causes. The system allows efficient management of events, memberships, donations, and announcements while fostering community engagement through a user-friendly interface.',
             link: 'https://socailandmusicalchamber.netlify.app',
+            username: "admin@gmail.com",
+            password: "admin"
         },
 
         {
@@ -112,7 +131,7 @@ function PortfolioComponent() {
             category: 'Frontend',
             shortDescription: 'A task in React Router that enables navigation between different pages in a React application using dynamic routing.',
             fullDescription: 'This task involves implementing React Router in a React application to enable seamless navigation between different components or pages. React Router provides a way to dynamically render components based on the URL, allowing users to navigate through the app without reloading the page. By defining routes and associating them with corresponding components, users can visit specific sections of the app by clicking on links, or programmatically through buttons or actions. This setup ensures that the application behaves like a single-page app (SPA), with efficient and smooth transitions between views. It supports various routing features such as nested routes, route parameters, redirects, and more, giving flexibility in handling different app paths.',
-            link: 'https://redux-cartto-page.netlify.app/',
+            link: 'https://redux-cartto-page.netlify.app/'
         },
         {
             imgSrc: `${reacttodo}`,
@@ -211,7 +230,7 @@ function PortfolioComponent() {
                                     />
                                     <div className="portfolio-info">
                                         <h4>{item.title}</h4>
-                                        <p>{item.shortDescription}</p>
+                                        {/* <p>{item.shortDescription}</p> */}
                                         <a
                                             href="#!"
                                             onClick={() => handleModalOpen(item)}
@@ -266,6 +285,23 @@ function PortfolioComponent() {
                                 <div className="modal-body">
                                     <img src={modalContent.imgSrc} className="img-fluid mb-4" alt={modalContent.title} />
                                     <p>{modalContent.fullDescription}</p>
+                                    Username: <input type="text" className="" value={modalContent.username} readOnly />&nbsp;
+                                    <button
+                                        onClick={() => handleCopy(modalContent.username, "username")}
+                                        className={`btn btn-sm ${copiedField === "username" ? "btn-success" : "btn-primary"}`}
+                                    >
+                                        {copiedField === "username" ? "Copied!" : "Copy"}
+                                    </button>
+
+                                    Password: <input type="text" className="" value={modalContent.password} readOnly />&nbsp;
+                                    <button
+                                        onClick={() => handleCopy(modalContent.password, "password")}
+                                        className={`btn btn-sm ${copiedField === "password" ? "btn-success" : "btn-primary"}`}
+                                    >
+                                        {copiedField === "password" ? "Copied!" : "Copy"}
+                                    </button>
+
+
                                 </div>
                                 <div className="modal-footer">
                                     <i className="bi bi-x-circle btn btn-dark" onClick={handleModalClose}></i>
@@ -274,7 +310,7 @@ function PortfolioComponent() {
                         </div>
                     </div>
                 )}
-            </section>
+            </section >
             <AboutComponent />
         </>
     );

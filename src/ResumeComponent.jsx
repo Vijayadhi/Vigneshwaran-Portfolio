@@ -1,24 +1,79 @@
-import React from 'react'
+import React, { useState } from 'react';
 // import resume_pdf from "/VigneshResume.pdf";
 function ResumeComponent() {
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = '/Vignesh_Resume.pdf' 
+        link.href = '/Vignesh_Resume.pdf'
         link.download = 'Vigneshwaran_Resume.pdf'; // Name the downloaded file (optional)
         // Path to your resume
         // console.log(resume_pdf);
 
-        
         link.click()
+    };
+
+    const [isCopied, setIsCopied] = useState(false);
+
+    const gdriveLink = "https://drive.google.com/file/d/1Kf8J3aLB2KSgGovnZAoyZoaCsqfJzi5B/view?usp=sharing";
+
+    const handleCopy = () => {
+        navigator.clipboard.writeText(gdriveLink).then(() => {
+            setIsCopied(true);
+
+            // Reset button text after 2 seconds
+            setTimeout(() => {
+                setIsCopied(false);
+            }, 2000);
+        });
     };
     return (
         <>
             {/* <!-- Resume Section --> */}
             <section id="resume" className="resume section">
 
+                <div className="resume-button">
+                    <button
+                        className="btn  text-center"
+                        style={{
+                            background: "#149ddd",
+                            fontWeight: 'bold',
+                            color: "#15141A",
+                            textAlign: "center",
+                        }}
+                        onClick={handleDownload}
+                    >
+                        Download CV &nbsp;
+                        <i
+                            className="bi bi-arrow-down-circle"
+                            style={{ color: "white", fontWeight: 'bold' }}
+                        ></i>
+                    </button>
+                    &nbsp;
+                    <button
+                        className="btn text-center"
+                        style={{
+                            background: isCopied ? "#28a745" : "#007bff", // Green when copied, else blue
+                            fontWeight: "bold",
+                            color: "#ffffff",
+                            textAlign: "center",
+                            border: "none",
+                            padding: "8px 12px",
+                            borderRadius: "8px",
+                            transition: "background 0.3s ease",
+                        }}
+                        onClick={handleCopy}
+                        onMouseOver={(e) => !isCopied && (e.target.style.background = "#0056b3")}
+                        onMouseOut={(e) => !isCopied && (e.target.style.background = "#007bff")}
+                    >
+                        {isCopied ? "Copied!" : "Copy Gdrive Link"}
+                        <i className="bi bi-copy ms-2" style={{ color: "white", fontWeight: "bold" }}></i>
+                    </button>
+
+                </div>
+
+
                 {/* <!-- Section Title --> */}
                 <div className="container section-title" data-aos="fade-up">
-                    <h2 style={{textTransform: 'uppercase'}}>Resume</h2>
+                    <h2 style={{ textTransform: 'uppercase' }}>Resume</h2>
                     <p>Discover my professional journey, highlighting my skills, achievements, and experiences. From academic excellence to real-world expertise, this is a snapshot of my dedication, growth, and passion for making an impact. Let’s build the future together!</p>
                 </div>
 
@@ -134,24 +189,6 @@ function ResumeComponent() {
                         </div>
 
 
-                    </div>
-                    <div className="resume-button">
-                        <button
-                            className="btn btn-lg text-center"
-                            style={{
-                                background: "#149ddd",
-                                fontWeight: 'bold',
-                                color: "#15141A",
-                                textAlign: "center",
-                            }}
-                            onClick={handleDownload}
-                        >
-                            Download CV &nbsp;
-                            <i
-                                className="bi bi-arrow-down-circle"
-                                style={{ color: "white", fontWeight: 'bold' }}
-                            ></i>
-                        </button>
                     </div>
 
 
