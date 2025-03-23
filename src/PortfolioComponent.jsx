@@ -43,7 +43,8 @@ function PortfolioComponent() {
             fullDescription: 'A comprehensive full-stack application developed using Python Django, providing an efficient platform for managing and redistributing multiple services. With a robust admin panel, admins can customize content such as blogs, galleries, and other service details, offering an enhanced experience for both service providers and users. The platform allows seamless service applications, making it easy to manage and update content on the go. Perfect for organizations looking to provide a user-friendly service hub with administrative flexibility and content customization',
             link: 'https://shgs.onrender.com/',
             username: "admin@gmail.com",
-            password: "admin"
+            password: "admin",
+            gitHub: "https://github.com/Vijayadhi/shgs-Main"
         },
         {
             imgSrc: `${aasc_manager}`,
@@ -53,7 +54,8 @@ function PortfolioComponent() {
             fullDescription: 'ASC Manager is a complex Python-based full-stack application designed for content management systems (CMS), enabling users with multiple roles such as admin and users. The app allows content creation, modification, and management with role-based access control. ',
             link: 'https://aasc-st-asmt-manager.onrender.com/',
             username: "admin@gmail.com",
-            password: "admin"
+            password: "admin",
+            gitHub: "https://github.com/Vijayadhi/aasc-sft",
         },
         {
             imgSrc: `${ecm_img}`,
@@ -63,7 +65,8 @@ function PortfolioComponent() {
             fullDescription: 'The Electricity Consumption Manager is an advanced system that provides a graphical representation of electricity consumption across multiple buildings. Built with Django REST Framework for the backend and React for the frontend, this system includes charts (pie charts) to visually represent energy usage for each building and meter.',
             link: 'https://electricity-manager-49sw0qy8c-vigneshwaran-js-projects.vercel.app/',
             username: "admin@gmail.com",
-            password: "admin"
+            password: "admin",
+            gitHub: "https://github.com/Vijayadhi/react-electricity-manager",
         },
         {
             imgSrc: `${gdf_img}`,
@@ -73,7 +76,8 @@ function PortfolioComponent() {
             fullDescription: 'getDataFilledDotcom is a MERN stack application developed for matrimony centers. This system enables the easy filling of bride bio-data templates, which can be downloaded in a high-quality PDF format. It serves as a solution for distributing and managing matrimonial data efficiently. Currently the app dosen\'t support register functionality else all working good.',
             link: 'https://getdatafilledotcom.netlify.app/',
             username: "vignesh@gmail.com",
-            password: "admin"
+            password: "admin",
+            gitHub: "https://github.com/Vijayadhi/getDataFilledDotCom",
         },
         {
             imgSrc: `${flight_img}`,
@@ -83,7 +87,8 @@ function PortfolioComponent() {
             fullDescription: 'The Airline Food Management System is a web-based application designed to streamline in-flight food service operations. Developed for final-year aviation college students, the system allows passengers to browse meals, place orders, and track their requests in real-time. The admin panel manages food inventory, order processing, and reports, while the flight crew interface facilitates order fulfillment and updates. Built using React.js for the frontend and Django REST Framework for the backend, the system ensures seamless communication through RESTful APIs with JWT authentication. This project enhances airline efficiency and passenger experience through a structured, responsive, and secure digital platform.',
             link: 'https://afos-backend.onrender.com/',
             username: "admin",
-            password: "admin"
+            password: "admin",
+            gitHub: "https://github.com/Vijayadhi/afos-frontend",
         },
         {
             imgSrc: `${social_image}`,
@@ -93,7 +98,8 @@ function PortfolioComponent() {
             fullDescription: 'The Social and Musical Chambers Trust Management System is a platform designed to streamline the activities and operations of a trust dedicated to promoting music and social causes. The system allows efficient management of events, memberships, donations, and announcements while fostering community engagement through a user-friendly interface.',
             link: 'https://socailandmusicalchamber.netlify.app',
             username: "admin@gmail.com",
-            password: "admin"
+            password: "admin",
+            gitHub: "https://github.com/Vijayadhi/socialandmusicalchambertrust-frontend",
         },
         {
             imgSrc: `${olms}`,
@@ -103,7 +109,8 @@ function PortfolioComponent() {
             fullDescription: 'Online Library Management System is a Python Full-Stack project built using Django to streamline library operations. This system allows admins to manage books, users, and borrowing records efficiently. Students/members can search, borrow, and return books online. It features user authentication, book catalog management, due date tracking, and fine calculation. The project ensures a responsive UI and a secure database for seamless library management. 🚀📚',
             link: 'https://onlinelibrary-qe0u.onrender.com/',
             username: "Admin",
-            password: "admin"
+            password: "admin",
+            gitHub: "https://github.com/Vijayadhi/onlinelibrary/tree/main",
         },
 
         {
@@ -112,7 +119,8 @@ function PortfolioComponent() {
             category: 'Frontend',
             shortDescription: 'Dynamic app with Javascript enabling users to short thier urls.',
             fullDescription: 'A Dynamic app developed using Javascript enabling users to short thier long urls.Implements the CRUD operation to short the given long urls with the help of bitly api. Also has the functionalites to Edit, Copy, and even deleted the shorted urls.',
-            link: 'https://mastercodeaddictsurlshortner.netlify.app/',
+            link: 'https://mastercodeaddictsurlshortner.netlify.app/',  
+            gitHub: "https://github.com/Vijayadhi/url-shortner",
         },
         {
             imgSrc: `${stm}`,
@@ -121,6 +129,7 @@ function PortfolioComponent() {
             shortDescription: 'API backend for managing student-mentor relationships, featuring CRUD operations.',
             fullDescription: 'A robust API that provides functionality to create, read, update, and delete (CRUD) operations for both students and mentors. Additionally, it allows for assigning mentors to students, retrieving assigned mentors, viewing previous mentor histories, and updating mentor-student relationships seamlessly.',
             link: 'https://student-mentor-assigning-lkcd.onrender.com/',
+            gitHub: "https://github.com/Vijayadhi/student-mentor-assigning",
         },
         {
             imgSrc: `${stm}`,
@@ -129,6 +138,7 @@ function PortfolioComponent() {
             shortDescription: 'A Node.js file system that generates a timestamp for every incoming GET request and logs it for tracking purposes.',
             fullDescription: 'This Node.js application utilizes the file system to generate and store a timestamp whenever a GET request is made. On every incoming request, it records the current date and time in a log file, providing a way to track the timing of requests for analytics or logging purposes. This system allows for easy tracking and debugging by storing the timestamps in a file, helping developers monitor the frequency of GET requests and their timestamps.',
             link: 'https://node-express-timestamp.onrender.com',
+            gitHub: "https://github.com/Vijayadhi/nodejs-filesystem",
         },
         {
             imgSrc: `${hallbokking}`,
@@ -137,6 +147,7 @@ function PortfolioComponent() {
             shortDescription: 'A hall booking system where users can register, view available rooms, and make bookings if rooms are available.',
             fullDescription: 'This Hall Booking System allows users to register and access a list of available rooms. Once registered, users can view real-time availability and book rooms for specific dates. The system checks room availability before confirming a booking, ensuring no double bookings occur. It stores user details, booking history, and room availability data, and allows users to manage their bookings, including viewing and canceling future reservations. Admins can update room availability, manage bookings, and generate reports, providing an efficient and streamlined process for both users and administrators.',
             link: 'https://hallbooking-h49u.onrender.com',
+            gitHub: "https://github.com/Vijayadhi/hallbooking",
         },
         {
             imgSrc: `${reduxcart}`,
@@ -145,6 +156,7 @@ function PortfolioComponent() {
             shortDescription: 'A Cart Page in a React Redux application that allows users to manage items in their shopping cart, updating item quantities, sub total and total prices are shown.',
             fullDescription: 'The Cart Page in this React Redux application provides users with an intuitive interface to manage their shopping cart. Users can add, remove, and update the quantities of items in the cart. As items are updated, the subtotal for each item is calculated and displayed, along with the total price for all items in the cart. Redux is used to store the cart data in the global state, ensuring that changes made to the cart are reflected across components in real-time. This centralized management of cart state enables easy updates, including recalculating prices and quantities, and ensuring that the cart is always up-to-date. The page also includes a checkout button for users to proceed with their purchase.',
             link: 'https://redux-cartto-page.netlify.app/',
+            gitHub: "https://github.com/Vijayadhi/redux-cart-page",
         },
         {
             imgSrc: `${recrou}`,
@@ -152,7 +164,8 @@ function PortfolioComponent() {
             category: 'Frontend',
             shortDescription: 'A task in React Router that enables navigation between different pages in a React application using dynamic routing.',
             fullDescription: 'This task involves implementing React Router in a React application to enable seamless navigation between different components or pages. React Router provides a way to dynamically render components based on the URL, allowing users to navigate through the app without reloading the page. By defining routes and associating them with corresponding components, users can visit specific sections of the app by clicking on links, or programmatically through buttons or actions. This setup ensures that the application behaves like a single-page app (SPA), with efficient and smooth transitions between views. It supports various routing features such as nested routes, route parameters, redirects, and more, giving flexibility in handling different app paths.',
-            link: 'https://redux-cartto-page.netlify.app/'
+            link: 'https://redux-cartto-page.netlify.app/',
+            gitHub: "https://github.com/Vijayadhi/react-router-dom",
         },
         {
             imgSrc: `${reacttodo}`,
@@ -161,6 +174,7 @@ function PortfolioComponent() {
             shortDescription: 'A To-Do App built with React that allows users to create, edit, mark tasks as completed, and delete them, all with a simple, interactive interface.',
             fullDescription: 'This To-Do App is a simple yet effective task management tool built using React. It allows users to add new tasks, edit existing ones, mark tasks as completed, and delete tasks when they are no longer needed. The app offers a clean, user-friendly interface where users can view their tasks in a list format and interact with them using checkboxes and buttons. The app stores the list of tasks in the component\'s state, ensuring that the list updates dynamically as users perform actions. It includes features like task filtering (to show completed or pending tasks), sorting tasks, and managing the task\'s state (completed or not). This project demonstrates React\'s core principles such as state management, event handling, and conditional rendering, making it an ideal starter project for anyone looking to improve their skills with React.',
             link: 'https://mastercodeaddictstodoapp.netlify.app/',
+            gitHub: ""
         },
         {
             imgSrc: `${axc}`,
@@ -169,6 +183,7 @@ function PortfolioComponent() {
             shortDescription: 'A basic User Management system using Axios for performing CRUD operations with React as the frontend.',
             fullDescription: 'This project implements a simple User Management system where users can be created, retrieved, updated, and deleted using Axios for API calls. The application is built with React on the frontend, where users can interact with a form to add a new user or update an existing one. Axios is used to send HTTP requests to a backend server (such as a Node.js or Django API) to manage the user data.',
             link: 'https://mastercodeaddictsaxioscrud.netlify.app/',
+            gitHub: ""
         },
         {
             imgSrc: `${ecm_api}`,
@@ -177,6 +192,7 @@ function PortfolioComponent() {
             shortDescription: 'EC Manager API is a backend service designed to manage electricity consumption data for multiple buildings and meters, providing endpoints for adding, updating, retrieving, and deleting records related to electricity usage.',
             fullDescription: 'The EC Manager API is a backend service built to manage and track electricity consumption for various buildings and their associated meters. It exposes several RESTful API endpoints to interact with the electricity consumption data. The system is designed to handle records for multiple buildings, each with multiple meters that track electricity usage over time.',
             link: 'https://electricity-manager-api.onrender.com/',
+            gitHub: "https://github.com/Vijayadhi/ebbill_generator",
         },
     ];
 
@@ -301,6 +317,14 @@ function PortfolioComponent() {
                                         className="btn btn-dark"
                                     >
                                         Visit
+                                    </a>
+                                    <a
+                                        href={modalContent.gitHub}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="btn btn-dark"
+                                    >
+                                        Source
                                     </a>
                                 </div>
                                 <div className="modal-body">
